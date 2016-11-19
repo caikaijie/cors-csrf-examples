@@ -1,0 +1,32 @@
+.root {
+  height: 100%;
+  position: relative;
+  header {
+    top: 0;
+    padding: 8px 12px;
+    color: deepskyblue;
+    clear: both;
+    a {
+      float: right;
+    }
+  }
+  .content {
+    font-size: 0.75rem;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: 36px; //
+    > ul {
+      > li {
+        padding: 0.2rem 0;
+      }
+      overflow: hidden;      
+      white-space: normal;
+      word-break: break-word;
+    }
+  }
+
+  border: 1px solid deepskyblue;
+}

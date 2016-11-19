@@ -1,0 +1,3 @@
+export const TYPE_SERVER_LOG = 'TYPE_SERVER_LOG'
+
+export const TYPE_CLIENT_LOG = 'TYPE_CLIENT_LOG'

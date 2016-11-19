@@ -1,0 +1,27 @@
+{
+  "extends": ["rackt", "plugin:react/recommended"],
+  "rules": {
+    // TODO: turn on.
+    "no-console": 0
+  },
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "DEBUG":true,
+    "alertify": true,
+    "videojs": true,
+    "console": true,
+    "d3": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+
+  hr {
+    height: 20px;
+    border: none;
+    border-top: 1px solid #ccc;
+    &:not(.solid) {
+      position: relative;
+      height: 15px;
+      overflow: hidden;
+      border: 0;
+      margin: 20px 0;
+      &::after {
+        content: "------------";
+        display: inline-block;
+        line-height: 5px;
+        vertical-align: top;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        word-wrap: break-word;
+        color: #ccc;
+      }
+    }
+  }
+
+  .main, .client, .server {
+    width: 33%;
+    min-width: 360px;
+    overflow: hidden;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 12px;
+    vertical-align: top;
+    top: 0;
+    bottom: 0;
+  }
+
+  .main {
+    left: 0;
+    overflow: auto;
+    > h3 {
+      font-size: 1.1rem;
+      > a {
+        margin-left: 0.5rem;
+        border: none !important;
+        font-weight: normal;
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+  .client {
+    left: 33%;
+  }
+  .server {
+    left: 66%;
+  }
+}
+
+.checklist {
+  > ul {
+    list-style: none;
+    > li {
+      display: inline-block;
+    }
+  }
+}
+
+.form {
+  >header, >label {
+    margin: 0.75rem 0;
+  }
+
+  >label {
+    display: block;
+    > select {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+}

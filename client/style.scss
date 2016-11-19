@@ -1,0 +1,22 @@
+@import "~normalize.css";
+
+:global{
+  #root {
+    height: 100%;
+    font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 1rem;
+    font-style: normal;
+
+    a {
+      cursor: pointer;
+      color: deeppink;
+      text-decoration: none;
+      font-size: 1rem;  
+      border-bottom: 1px solid deeppink;
+      &:hover {
+        color: white;
+        background-color: deeppink;
+      }
+    }
+  }
+}
